@@ -5,7 +5,8 @@ metadata:
 spec:
   minReadySeconds: 5
   replicas: 2
-  strategy: RollingUpdate
+  strategy:
+      type: RollingUpdate
   template:
     metadata:
       labels:
