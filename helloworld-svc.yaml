@@ -4,6 +4,12 @@ metadata:
   name: helloworld
 spec:
   ports:
-    - port: 80
+    - name: http1
+      protocol: TCP
+      port: 80
+      targetPort: 80
   selector:
     name: helloworld
+  type: LoadBalancer
+  sessionAffinity: None
+  externalTrafficPolicy: Cluster
