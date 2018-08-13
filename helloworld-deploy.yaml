@@ -4,7 +4,7 @@ metadata:
   name: helloworld
 spec:
   minReadySeconds: 5
-  replicas: 2
+  replicas: 10
   strategy:
       type: RollingUpdate
   template:
